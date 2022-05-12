@@ -20,7 +20,7 @@ namespace Repository
             MaxCapacity = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("In wich floor Elevator is?");
             ElevatorStayingFloor = Convert.ToInt32(Console.ReadLine());
-
+            Console.WriteLine("");
             Elevator elevator = new Elevator(ElevatorId, MaxCapacity, ElevatorStayingFloor);
         }
     }

@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElevatorTask", "ElevatorTask\ElevatorTask.csproj", "{54139409-892E-46CE-AD17-4B1B1CDEF522}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElevatorTask", "ElevatorTask\ElevatorTask.csproj", "{54139409-892E-46CE-AD17-4B1B1CDEF522}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BussnesClass", "BussnesClass\BussnesClass.csproj", "{2EC4C87C-1F06-44B0-BA60-3B6B3677F457}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BussnesClass", "BussnesClass\BussnesClass.csproj", "{2EC4C87C-1F06-44B0-BA60-3B6B3677F457}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{DB4BA0A7-C5EB-4E17-A483-CB833F22A690}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "Repository\Repository.csproj", "{DB4BA0A7-C5EB-4E17-A483-CB833F22A690}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{8266B81B-1C57-4DBB-8A23-1E892A24C5E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTest", "UnitTest\UnitTest.csproj", "{8266B81B-1C57-4DBB-8A23-1E892A24C5E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{C3D6BD4B-BE9E-4DF3-A40C-10D3F4E7479B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{8266B81B-1C57-4DBB-8A23-1E892A24C5E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8266B81B-1C57-4DBB-8A23-1E892A24C5E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8266B81B-1C57-4DBB-8A23-1E892A24C5E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3D6BD4B-BE9E-4DF3-A40C-10D3F4E7479B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3D6BD4B-BE9E-4DF3-A40C-10D3F4E7479B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3D6BD4B-BE9E-4DF3-A40C-10D3F4E7479B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3D6BD4B-BE9E-4DF3-A40C-10D3F4E7479B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

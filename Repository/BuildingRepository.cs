@@ -19,7 +19,7 @@ namespace Repository
             ElevatorStandsInWichFloor = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Elevator door ID is?");
             ElevatorStandsInWichFloor = Convert.ToInt32(Console.ReadLine());
-
+            Console.WriteLine("");
             Building building = new Building(BuildingAdress, FloorCount, ElevatorStandsInWichFloor, ElevatorId);
 
         }

@@ -9,30 +9,30 @@ namespace BussnesClass
     public class Elevator
     {
         public string Id { get; }
-        public int MaxCapacityKg { get; }
+        public int MaxCapacity { get; }
         public int ElevatorPlace { get; }
 
-        public Elevator(string id, int maxCapacityKg, int elevatorPlace)
+        public Elevator(string id, int maxCapacity, int elevatorPlace)
         {
             Id = id;
-            MaxCapacityKg = maxCapacityKg;
+            MaxCapacity = maxCapacity;
             ElevatorPlace = elevatorPlace;
         }
 
-        public bool ElevatorMoves(int peopleCapacityKg, int floorNumber)
+        public bool ElevatorMoves(int peopleCapacity, int floorNumberPeopleWhantToGo, int elevatorPalceFloor)
         {
-            if (peopleCapacityKg > MaxCapacityKg)
+            if (peopleCapacity > MaxCapacity)
             {
-                Console.WriteLine($"Elevator can't move, your are to many. Capacity must not be greater than {MaxCapacityKg}");
+                Console.WriteLine($"Elevator can't move, your are to many. Capacity must not be greater than {MaxCapacity}");
                 return false;
             }
-            else if (floorNumber == ElevatorPlace)
+            else if (floorNumberPeopleWhantToGo == elevatorPalceFloor)
             {
-                Console.WriteLine("Elevator stays in the same place");
-                return false;
+                Console.WriteLine("Elevator stays in the same place, choose another floor");
+                return true;
 
             }
-            else if (floorNumber < ElevatorPlace)
+            else if (floorNumberPeopleWhantToGo < elevatorPalceFloor)
             {
                 Console.WriteLine("Elevator goes down");
                 return true;
@@ -48,8 +48,7 @@ namespace BussnesClass
 
         public void FloorElevatorStops(int floorNumberElevatorGoesTo)
         {
-            int floorElevatorStoped =  floorNumberElevatorGoesTo - ElevatorPlace;
-            Console.WriteLine(floorElevatorStoped);
+            Console.WriteLine(floorNumberElevatorGoesTo);
             
         }
     }
